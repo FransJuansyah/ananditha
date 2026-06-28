@@ -20,6 +20,7 @@
 
   --color-sakura-text: #9c3d54;
   --color-butter-text: #8a6a1f;
+  --color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,6 +37,7 @@
 
     --color-sakura-text: #f0c6d2;
     --color-butter-text: #f3e6b8;
+    --color-scheme: dark;
   }
 }
 

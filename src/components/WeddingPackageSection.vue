@@ -1,4 +1,8 @@
 <script setup>
+import { useBooking } from '../composables/useBooking'
+
+const { openBooking } = useBooking()
+
 const phone = '628971424117'
 
 const packages = [

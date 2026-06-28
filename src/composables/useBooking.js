@@ -5,9 +5,9 @@ const SUPABASE_KEY = 'sb_publishable_k7KDABTtf1Ae-E85fI8A2Q_rkJ6CrsA'
 const TABLE_NAME = 'schedules'
 
 export const SERVICE_OPTIONS = [
-  { value: 'regular', label: 'Regular (Wisuda, Pas Photo, Ijazah)' },
+  { value: 'regular', label: 'Regular (Pas Photo, Ijazah)' },
   { value: 'glamour', label: 'Glamour (Engagement, Prewed, Pageant)' },
-  { value: 'premium', label: 'Premium (Bridesmaid, Tasyakuran, Party)' },
+  { value: 'premium', label: 'Premium (Wisuda, Bridesmaid, Tasyakuran, Party)' },
   { value: 'wedding_single', label: 'Wedding - Akad/Resepsi (Single Event)' },
   { value: 'wedding_1day', label: 'Wedding - Akad-Resepsi (1 Hari Acara)' },
   { value: 'wedding_2days', label: 'Wedding - Akad-Resepsi (2 Hari Acara)' },
