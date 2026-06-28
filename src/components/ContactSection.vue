@@ -30,7 +30,7 @@ import mapsImg from '../assets/images/maps/maps.png' // ganti sesuai nama file a
       <h3>Kunjungi Studio Kami</h3>
       <p>Datang langsung untuk konsultasi gratis atau sesi makeup di studio kami yang nyaman dan privat.</p>
       <address>Komplek Villa Gardena III Blok B-12, Karya Baru, Alang-Alang Lebar 30152,<br />Kota Palembang, Sumatera Selatan.</address>
-      <a class="maps-link" href="https://maps.app.goo.gl/jVEwpiXF3Xjz31dUA" target="_blank" rel="noopener">
+      <a class="maps-link" href="https://maps.app.goo.gl/b5V2cSsTce8yf1ZN7" target="_blank" rel="noopener">
         <img :src="mapsImg" alt="Lokasi Studio Ananditha Makeup" />
         <span>Lihat di Google Maps →</span>
       </a>
