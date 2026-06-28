@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Manrope', sans-serif;
+
+  --color-bg: #F3DCC9;
+  --color-surface: #ffffff;
+  --color-text-primary: #3a2a2e;
+  --color-text-secondary: #8c7a7d;
+  --color-border: #f0dde1;
+
+  --color-baby-pink: #f8d7dc;
+  --color-sakura: #f2a8b8;
+  --color-butter: #f3d88b;
+
+  --color-sakura-text: #9c3d54;
+  --color-butter-text: #8a6a1f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #2a1f22;
+    --color-surface: #352a2e;
+    --color-text-primary: #f5e8e6;
+    --color-text-secondary: #b89da0;
+    --color-border: #4a3a3e;
+
+    --color-baby-pink: #5c4147;
+    --color-sakura: #b97b8c;
+    --color-butter: #c9b26e;
+
+    --color-sakura-text: #f0c6d2;
+    --color-butter-text: #f3e6b8;
+  }
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-sakura);
+  outline-offset: 2px;
+}
