@@ -13,7 +13,7 @@ for (let h = 0; h <= 23; h++) {
     TIME_OPTIONS.push({ value: `${hh}:${mm}`, label: `${hh}:${mm}` })
   }
 }
-
+  
 const { isOpen, isAdminOpen, prefilledService, sortedSchedules, closeBooking, toggleAdmin } = useBooking()
 const phone = '628971424117'
 
