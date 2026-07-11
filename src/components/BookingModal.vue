@@ -6,9 +6,8 @@ import CustomDropdown from './ui/CustomDropdown.vue'
 import CustomDatePicker from './ui/CustomDatePicker.vue'
 
 const TIME_OPTIONS = []
-for (let h = 6; h <= 22; h++) {
+for (let h = 0; h <= 23; h++) {
   for (const m of [0, 30]) {
-    if (h === 22 && m === 30) continue
     const hh = String(h).padStart(2, '0')
     const mm = String(m).padStart(2, '0')
     TIME_OPTIONS.push({ value: `${hh}:${mm}`, label: `${hh}:${mm}` })
