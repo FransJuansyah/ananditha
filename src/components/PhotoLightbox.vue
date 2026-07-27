@@ -21,6 +21,21 @@ function onKeydown(e) {
   if (e.key === 'ArrowLeft') prev()
   if (e.key === 'ArrowRight') next()
 }
+
+let touchStartX = 0
+let touchStartY = 0
+
+function onTouchStart(e) {
+  touchStartX = e.changedTouches[0].clientX
+  touchStartY = e.changedTouches[0].clientY
+}
+function onTouchEnd(e) {
+  const dx = e.changedTouches[0].clientX - touchStartX
+  const dy = e.changedTouches[0].clientY - touchStartY
+  if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return
+  if (dx < 0) next()
+  else prev()
+}
 </script>
 
 <template>
@@ -30,6 +45,8 @@ function onKeydown(e) {
     tabindex="0"
     @keydown="onKeydown"
     @click.self="$emit('close')"
+    @touchstart="onTouchStart"
+    @touchend="onTouchEnd"
   >
     <button class="close" @click="$emit('close')" aria-label="Tutup">&times;</button>
     <button class="nav prev" @click="prev" aria-label="Foto sebelumnya">&lsaquo;</button>
